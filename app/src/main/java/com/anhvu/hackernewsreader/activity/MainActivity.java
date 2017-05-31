@@ -26,7 +26,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnItemClickListener {
 
+    // number of updated items each time
     private static final int ITEM_UPDATE_NUM = 15;
+    // threshold to start loading more
     private static final int VISIBLE_THRESHOLD = 1;
 
     private SwipeRefreshLayout refreshLayout;
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                 super.onScrolled(recyclerView, dx, dy);
                 int totalItemCount = layoutManager.getItemCount();
                 int lastItemIndex = layoutManager.findLastVisibleItemPosition();
+                // update more items when user reach the end of the list
                 if (!isLoading && totalItemCount <= (lastItemIndex + VISIBLE_THRESHOLD)) {
                     isLoading = true;
                     progressBar.setVisibility(View.VISIBLE);
