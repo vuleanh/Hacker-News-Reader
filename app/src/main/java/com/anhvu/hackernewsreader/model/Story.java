@@ -1,42 +1,30 @@
 package com.anhvu.hackernewsreader.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 
+import com.anhvu.hackernewsreader.ui.viewmodel.StoryViewModel;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by leanh on 5/29/17.
  */
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Story {
 
-    @SerializedName("by")
-    @Expose
     private String by;
-    @SerializedName("descendants")
-    @Expose
     private Integer descendants;
-    @SerializedName("id")
-    @Expose
-    private Integer id;
-    @SerializedName("kids")
-    @Expose
-    private List<Integer> kids = null;
-    @SerializedName("score")
-    @Expose
+    private Long id;
+    private List<Long> kids = null;
     private Integer score;
-    @SerializedName("time")
-    @Expose
-    private Integer time;
-    @SerializedName("title")
-    @Expose
+    private Long time;
     private String title;
-    @SerializedName("type")
-    @Expose
     private String type;
-    @SerializedName("url")
-    @Expose
     private String url;
 
     public String getBy() {
@@ -55,19 +43,19 @@ public class Story {
         this.descendants = descendants;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public List<Integer> getKids() {
+    public List<Long> getKids() {
         return kids;
     }
 
-    public void setKids(List<Integer> kids) {
+    public void setKids(List<Long> kids) {
         this.kids = kids;
     }
 
@@ -79,11 +67,11 @@ public class Story {
         this.score = score;
     }
 
-    public Integer getTime() {
+    public Long getTime() {
         return time;
     }
 
-    public void setTime(Integer time) {
+    public void setTime(Long time) {
         this.time = time;
     }
 

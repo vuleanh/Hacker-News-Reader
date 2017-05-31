@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">Hacker News Reader</string>
+    <string name="loading">Loading...</string>
+    <string name="divider">" - "</string>
+    <string name="story">Story</string>
+    <string name="top_stories">Top Stories</string>
+
+    <plurals name="dayAgo">
+        <item quantity="zero">%d day ago</item>
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+
+    <plurals name="minuteAgo">
+        <item quantity="zero">%d minute ago</item>
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+
+    <plurals name="hourAgo">
+        <item quantity="zero">%d hour ago</item>
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+
+    <plurals name="secondAgo">
+        <item quantity="zero">%d second ago</item>
+        <item quantity="one">%d second ago</item>
+        <item quantity="other">%d seconds ago</item>
+    </plurals>
+
+    <plurals name="comment">
+        <item quantity="zero">%d comment</item>
+        <item quantity="one">%d comment</item>
+        <item quantity="other">%d comments</item>
+    </plurals>
 </resources>

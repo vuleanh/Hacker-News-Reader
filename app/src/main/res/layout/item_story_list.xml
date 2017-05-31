@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <RelativeLayout
-        android:layout_width="80dp"
+        android:layout_width="60dp"
         android:layout_height="match_parent"
-        android:background="@color/lightOrange">
+        android:background="@drawable/orange_backgound_white_bottom">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -20,13 +20,15 @@
                 android:id="@+id/txt_index"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1" />
+                android:textColor="@color/black"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/txt_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+17" />
+                android:textColor="@color/gray_text"
+                android:textSize="12sp" />
 
         </LinearLayout>
     </RelativeLayout>
@@ -34,35 +36,58 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/white_background_orange_bottom"
         android:padding="16dp">
 
         <TextView
             android:id="@+id/txt_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="We hope to improve the API over time, and may later enable access to private per-user data using OAuth. The changes" />
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
 
         <TextView
-            android:text="nytimes.com"
             android:id="@+id/txt_url"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_title" />
+            android:layout_below="@+id/txt_title"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/txt_time_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_url"
-            android:text="1 hour ago - John" />
+            android:textColor="@color/gray_text"
+            android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/txt_comment_count"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/txt_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
 
     </RelativeLayout>
-
 
 </LinearLayout>

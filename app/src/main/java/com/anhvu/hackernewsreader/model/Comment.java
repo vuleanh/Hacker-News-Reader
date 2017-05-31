@@ -1,36 +1,21 @@
 package com.anhvu.hackernewsreader.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
 /**
  * Created by leanh on 5/29/17.
  */
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Comment {
 
-    @SerializedName("by")
-    @Expose
     private String by;
-    @SerializedName("id")
-    @Expose
-    private Integer id;
-    @SerializedName("kids")
-    @Expose
-    private List<Integer> kids = null;
-    @SerializedName("parent")
-    @Expose
-    private Integer parent;
-    @SerializedName("text")
-    @Expose
+    private Long id;
+    private List<Long> kids = null;
+    private Long parent;
     private String text;
-    @SerializedName("time")
-    @Expose
-    private Integer time;
-    @SerializedName("type")
-    @Expose
+    private Long time;
     private String type;
 
     public String getBy() {
@@ -41,27 +26,27 @@ public class Comment {
         this.by = by;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public List<Integer> getKids() {
+    public List<Long> getKids() {
         return kids;
     }
 
-    public void setKids(List<Integer> kids) {
+    public void setKids(List<Long> kids) {
         this.kids = kids;
     }
 
-    public Integer getParent() {
+    public Long getParent() {
         return parent;
     }
 
-    public void setParent(Integer parent) {
+    public void setParent(Long parent) {
         this.parent = parent;
     }
 
@@ -73,11 +58,11 @@ public class Comment {
         this.text = text;
     }
 
-    public Integer getTime() {
+    public Long getTime() {
         return time;
     }
 
-    public void setTime(Integer time) {
+    public void setTime(Long time) {
         this.time = time;
     }
 
