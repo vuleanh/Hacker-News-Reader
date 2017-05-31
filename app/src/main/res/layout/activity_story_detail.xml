@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightOrange"
-    tools:context="com.anhvu.hackernewsreader.ui.activity.StoryDetailActivity">
+    tools:context=".activity.StoryDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

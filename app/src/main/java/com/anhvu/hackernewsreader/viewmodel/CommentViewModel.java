@@ -1,4 +1,4 @@
-package com.anhvu.hackernewsreader.ui.viewmodel;
+package com.anhvu.hackernewsreader.viewmodel;
 
 import com.anhvu.hackernewsreader.HackerNewsApplication;
 import com.anhvu.hackernewsreader.Util;

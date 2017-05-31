@@ -4,6 +4,7 @@
     <string name="divider">" - "</string>
     <string name="story">Story</string>
     <string name="top_stories">Top Stories</string>
+    <string name="fail_to_get_data">Failed to get data</string>
 
     <plurals name="dayAgo">
         <item quantity="zero">%d day ago</item>

@@ -1,4 +1,4 @@
-package com.anhvu.hackernewsreader.ui.adapter;
+package com.anhvu.hackernewsreader.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.anhvu.hackernewsreader.ui.listener.OnItemClickListener;
+import com.anhvu.hackernewsreader.listener.OnItemClickListener;
 import com.anhvu.hackernewsreader.R;
-import com.anhvu.hackernewsreader.ui.viewmodel.StoryViewModel;
+import com.anhvu.hackernewsreader.viewmodel.StoryViewModel;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.anhvu.hackernewsreader.ui.listener;
+package com.anhvu.hackernewsreader.listener;
 
 
 /**

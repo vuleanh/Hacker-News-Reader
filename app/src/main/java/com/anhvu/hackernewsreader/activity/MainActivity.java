@@ -1,4 +1,4 @@
-package com.anhvu.hackernewsreader.ui.activity;
+package com.anhvu.hackernewsreader.activity;
 
 import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -8,13 +8,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.anhvu.hackernewsreader.Constant;
-import com.anhvu.hackernewsreader.ui.listener.OnItemClickListener;
+import com.anhvu.hackernewsreader.listener.OnItemClickListener;
 import com.anhvu.hackernewsreader.R;
 import com.anhvu.hackernewsreader.model.Story;
-import com.anhvu.hackernewsreader.ui.adapter.StoryListAdapter;
-import com.anhvu.hackernewsreader.ui.viewmodel.StoryViewModel;
+import com.anhvu.hackernewsreader.adapter.StoryListAdapter;
+import com.anhvu.hackernewsreader.viewmodel.StoryViewModel;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-
+                Toast.makeText(MainActivity.this, R.string.fail_to_get_data, Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -133,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-
+                Toast.makeText(MainActivity.this, R.string.fail_to_get_data, Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -1,14 +1,9 @@
 package com.anhvu.hackernewsreader.model;
 
 
-import com.anhvu.hackernewsreader.ui.viewmodel.StoryViewModel;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by leanh on 5/29/17.

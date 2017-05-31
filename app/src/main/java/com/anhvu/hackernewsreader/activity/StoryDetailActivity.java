@@ -1,4 +1,4 @@
-package com.anhvu.hackernewsreader.ui.activity;
+package com.anhvu.hackernewsreader.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,14 +15,13 @@ import com.anhvu.hackernewsreader.R;
 import com.anhvu.hackernewsreader.Util;
 import com.anhvu.hackernewsreader.model.Comment;
 import com.anhvu.hackernewsreader.model.Story;
-import com.anhvu.hackernewsreader.ui.adapter.CommentListAdapter;
-import com.anhvu.hackernewsreader.ui.viewmodel.CommentViewModel;
+import com.anhvu.hackernewsreader.adapter.CommentListAdapter;
+import com.anhvu.hackernewsreader.viewmodel.CommentViewModel;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class StoryDetailActivity extends AppCompatActivity {
